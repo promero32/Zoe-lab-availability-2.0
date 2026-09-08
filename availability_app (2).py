@@ -8,7 +8,7 @@ st.set_page_config(page_title="Open Lab Availability", layout="wide", page_icon=
 @st.cache_data
 def load_data():
     # UPDATE THIS PATH to where your .numbers file is saved on your computer
-    doc = Document(r"C:\Users\romer\Downloads\Open Lab Availability.numbers")
+    doc = Document("Open Lab Availability.numbers")
     sheet = doc.sheets[0]
     table = sheet.tables[0]
     rows = list(table.iter_rows())
